@@ -1,0 +1,237 @@
+/* Modal Styles */
+.artisan-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+  }
+  
+  .artisan-modal {
+    background: white;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #2c1810;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .modal-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f9f5f0;
+  }
+  
+  .modal-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .modal-header-content h2 {
+    font-size: 2.5rem;
+    color: #2c1810;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .modal-header-content .specialty {
+    font-size: 1.2rem;
+    color: #c17f59;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-header-content .location,
+  .modal-header-content .experience {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c1810;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .modal-body h3 {
+    font-size: 1.8rem;
+    color: #2c1810;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .modal-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item {
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  /* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+  .artisan-modal-overlay {
+    padding: 0.2rem;
+  }
+  
+  .artisan-modal {
+    width: 100%;
+    max-height: 90vh;
+  }
+  
+  .modal-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #f9f5f0;
+  }
+  
+  .modal-header img {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .modal-header-content h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-header-content .specialty {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .modal-header-content .location,
+  .modal-header-content .experience {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .modal-body h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .modal-body p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .artisan-modal-overlay {
+    padding: 0.2rem;
+  }
+  
+  .artisan-modal {
+    width: 100%;
+    max-height: 90vh;
+  }
+  
+  .modal-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #f9f5f0;
+  }
+  
+  .modal-header img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-header-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-header-content .specialty {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .modal-header-content .location,
+  .modal-header-content .experience {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .modal-body h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .modal-body p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
