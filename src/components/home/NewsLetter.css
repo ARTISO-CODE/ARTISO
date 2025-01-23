@@ -1,0 +1,104 @@
+.newsletter-section {
+    background-color: #f9f5f0;
+    width: 100%;
+}
+.newsletter-Home {
+    background-color: transparent;
+    padding: 50px 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-Home h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #2c1810;
+}
+
+.newsletter-Home p {
+    font-size: 16px;
+    color: #666;
+}
+
+.newsletter-Home input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.newsletter-Home input[type="email"]:focus {
+    outline: none;
+    border-color: #a66b47;
+}
+
+.newsletter-Home button {
+    background-color: #c17f59;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.newsletter-Home button:hover {
+    background-color: #a66b47;
+}
+.newsletter-Home button:active {
+    background-color: white;
+    color: #c17f59;
+}
+
+/* --- Responsivité --- */
+@media (max-width: 768px) {
+    .newsletter-Home {
+        padding: 30px 15px;
+    }
+
+    .newsletter-Home h2 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter-Home p {
+        font-size: 0.9rem;
+    }
+
+    .newsletter-Home input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .newsletter-Home button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-Home {
+        padding: 20px 10px;
+    }
+
+    .newsletter-Home h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-Home p {
+        font-size: 0.8rem;
+    }
+
+    .newsletter-Home input[type="email"] {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .newsletter-Home button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
